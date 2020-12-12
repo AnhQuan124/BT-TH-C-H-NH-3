@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TinTuc.TinTucFragment"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#fff">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/avatar"
+            android:padding="5dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Anh Quân"
+                android:textColor="#000000"
+                android:textSize="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Khách hàng mới"
+                android:textSize="16dp"/>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/thongbao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_notifications_none"
+            android:layout_gravity="center"
+            android:layout_marginLeft="170dp"/>
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#ffffff">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/gridicontd"
+                    android:background="#ffffff"
+                    android:layout_marginRight="7dp">
+                    <ImageView
+                        android:id="@+id/imglctd"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/tichdiem"/>
+                    <TextView
+                        android:id="@+id/txtlctd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tích điểm"
+                        android:textSize="16dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:gravity="center"
+                        android:layout_below="@id/imglctd"
+                        android:paddingBottom="10dp"
+                        android:textColor="#000000"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/gridicondh"
+                    android:background="#ffffff"
+                    android:layout_marginRight="7dp">
+                    <ImageView
+                        android:id="@+id/imgdh"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/dathang"/>
+                    <TextView
+                        android:id="@+id/txtdh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Đặt hàng"
+                        android:textSize="16dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:gravity="center"
+                        android:layout_below="@id/imgdh"
+                        android:paddingBottom="10dp"
+                        android:textColor="#000000"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/gridiconcp"
+                    android:background="#ffffff"
+                    android:layout_marginRight="7dp">
+                    <ImageView
+                        android:id="@+id/imgcp"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/coupon"/>
+                    <TextView
+                        android:id="@+id/txtcp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Coupon"
+                        android:textSize="16dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:gravity="center"
+                        android:layout_below="@id/imgcp"
+                        android:paddingBottom="10dp"
+                        android:textColor="#000000"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/gridiconrw"
+                    android:background="#ffffff"
+                    android:layout_marginRight="7dp">
+                    <ImageView
+                        android:id="@+id/imgrw"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/rewards"/>
+                    <TextView
+                        android:id="@+id/txtrw"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tích điểm"
+                        android:textSize="16dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:gravity="center"
+                        android:layout_below="@id/imgrw"
+                        android:paddingBottom="10dp"
+                        android:textColor="#000000"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="365dp"
+                    android:layout_height="wrap_content"
+                    android:text="Ưu đãi đặc biệt"
+                    android:padding="7dp"
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="10dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_more_horiz"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcc_uudaidacbiet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="365dp"
+                    android:layout_height="wrap_content"
+                    android:text="Cập nhật từ Nhà"
+                    android:padding="7dp"
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="10dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_more_horiz"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcc_capnhattunha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="365dp"
+                    android:layout_height="wrap_content"
+                    android:text="#CoffeeLover"
+                    android:padding="7dp"
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="10dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_more_horiz"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcc_coffeelover"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"/>
+
+            <TextView
+                android:layout_width="365dp"
+                android:layout_height="wrap_content"
+                android:text="Nhạc đang phát tại Nhà"
+                android:padding="7dp"
+                android:textSize="18dp"
+                android:textColor="#000000"
+                android:layout_marginLeft="10dp"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
